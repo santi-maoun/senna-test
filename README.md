@@ -63,4 +63,4 @@ Click Execute. Downloaded image file will appear at 'bnk-download' folder.
 2. Set home team score with '/q10/home'
 3. Set away team score with '/q10/away'
 4. Get score with '/q10/score'
-5. You can finish match with '/q10/end' *note that after finish match you can not set score again util you start next match
+5. You can finish match with '/q10/end' *note that after finish match you can not set score again until you start next match
