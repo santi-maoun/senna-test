@@ -29,10 +29,10 @@ Please visit.
 ```
 http://localhost:3000/api
 ```
-Click question you want to test.\n
-Click Try it out.\n
-Edit parameters.\n
-Click Execute.\n
+Click question you want to test.<br>
+Click Try it out.<br>
+Edit parameters.<br>
+Click Execute.<br>
 
 ### Question 1
 You can change parameter name.
