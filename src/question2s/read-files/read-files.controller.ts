@@ -1,5 +1,6 @@
 import { Controller, Post, UseInterceptors, UploadedFile } from '@nestjs/common';
 import { FileInterceptor } from '@nestjs/platform-express';
+import { ApiConsumes, ApiImplicitFile } from '@nestjs/swagger';
 import { ReadFilesService } from './read-files.service';
 import { UnsupportFileException } from './exceptions/unsupport-file.exception';
 
@@ -9,6 +10,8 @@ export class ReadFilesController {
         private readonly readFilesService: ReadFilesService,
     ) { }
 
+    @ApiConsumes('multipart/form-data')
+    @ApiImplicitFile({ name: 'file', required: true })
     @Post()
     @UseInterceptors(FileInterceptor('file', {
         fileFilter: (req: any, file: any, cb: any) => {
